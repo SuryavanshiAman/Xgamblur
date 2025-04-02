@@ -258,7 +258,9 @@ class _WithdrawScreenState extends State<WithdrawScreen> {
           InkWell(
             onTap: () {
               selectedIndex==1&& usdtData == null||selectedIndex==0&&bankData==null?  selectedIndex == 0
-                  ? Navigator.pushNamed(context, RoutesName.bankScreen): Navigator.pushNamed(context, RoutesName.usdtAddress):null;
+                  ?
+              Navigator.pushNamed(context, RoutesName.bankScreen)
+                  : Navigator.pushNamed(context, RoutesName.usdtAddress):null;
             },
             child: Container(
               width: double.infinity,

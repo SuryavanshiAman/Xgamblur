@@ -208,11 +208,11 @@ class _BankScreenState extends State<BankScreen> {
           ),
           SizedBox(height: height*0.03),
           // Recipient's name section
-          rowWidget(Assets.imagesIfscCode,'IFC code'),
+          rowWidget(Assets.imagesIfscCode,'IFSC code'),
           SizedBox(height: height*0.02),
           CustomTextField(
             controller: _ifcController,
-            label: "Enter the IFC code",
+            label: "Enter the IFSC code",
             hintColor: AppColor.lightGray,
             hintSize: 16,
             height: 55,
@@ -225,7 +225,7 @@ class _BankScreenState extends State<BankScreen> {
             border: Border.all(color: AppColor.gray.withOpacity(0.3)),
             borderRadius: BorderRadius.circular(15),
             fieldRadius: BorderRadius.circular(15),
-            prefix: Icon(Icons.currency_rupee, color: AppColor.white),
+            // prefix: Icon(Icons.currency_rupee, color: AppColor.white),
           ),
           SizedBox(height: height*0.03),
           constantbutton(onTap: () {

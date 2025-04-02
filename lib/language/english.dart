@@ -67,7 +67,7 @@ class LocaleStringEn extends Translations {
       'Type':"Type",
       'Time':"Time",
       'Order number':"Order number",
-      'Reason':"Order number",
+      'Reason':"Reason",
       'Cancel':"Cancel",
       'Confirm':"Confirm",
       'USDT QR Deposit':"USDT QR Deposit",
