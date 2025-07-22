@@ -196,7 +196,6 @@ class LocaleTranslations extends Translations {
     'en_US': LocaleStringEn().keys['en_US']!,
     'hi_IN': LocaleStringHi().keys['hi_IN']!,
     'th_TH': LocaleStringTh().keys['th_TH']!,
-
   };
 }
 double height=0.0;
