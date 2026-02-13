@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:xgamblur/model/banner_model.dart';
-import 'package:xgamblur/repo/banner_repo.dart';
+import 'package:bettsix/model/banner_model.dart';
+import 'package:bettsix/repo/banner_repo.dart';
 
 class BannerViewModel with ChangeNotifier {
   final _bannerRepo = BannerRepository();

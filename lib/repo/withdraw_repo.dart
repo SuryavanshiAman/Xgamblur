@@ -1,6 +1,6 @@
 
 import 'package:flutter/foundation.dart';
-import 'package:xgamblur/res/api_url.dart';
+import 'package:bettsix/res/api_url.dart';
 import '../helper/network/base_api_services.dart';
 import '../helper/network/network_api_services.dart';
 

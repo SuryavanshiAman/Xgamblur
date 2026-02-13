@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/utils/utils.dart';
-import 'package:xgamblur/view/home/home_screen.dart';
-import 'package:xgamblur/view/profile/profile_screen.dart';
-import 'package:xgamblur/view/wallet/wallet_screen.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/utils/utils.dart';
+import 'package:bettsix/view/home/home_screen.dart';
+import 'package:bettsix/view/profile/profile_screen.dart';
+import 'package:bettsix/view/wallet/wallet_screen.dart';
 import 'package:iconly/iconly.dart';
 
 class CustomBottomBar extends StatefulWidget {
@@ -41,10 +41,10 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
   }
   @override
   Widget build(BuildContext context) {
-    return PopScope(
-      canPop: false,
-      onPopInvoked: (v) {
+    return WillPopScope(
+      onWillPop: () async {
         _onWillPop();
+        return false; // same as canPop: false
       },
       child: Scaffold(
         backgroundColor: AppColor.black,

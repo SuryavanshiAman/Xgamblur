@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/color-const.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/color-const.dart';
 import 'package:get/get.dart';
 
 import 'tab_page/email_login.dart';

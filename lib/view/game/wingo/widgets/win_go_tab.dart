@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:xgamblur/view/game/wingo/widgets/my_history.dart';
-import 'package:xgamblur/view/game/wingo/widgets/win_go_chart.dart';
+import 'package:bettsix/view/game/wingo/widgets/my_history.dart';
+import 'package:bettsix/view/game/wingo/widgets/win_go_chart.dart';
 
 import '../controller/win_go_controller.dart';
 import 'game_history.dart';

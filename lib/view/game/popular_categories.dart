@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/shimmer.dart';
-import 'package:xgamblur/view_model/all_game_list_view_model.dart';
-import 'package:xgamblur/view_model/jili_game_launcher_view_model.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/shimmer.dart';
+import 'package:bettsix/view_model/all_game_list_view_model.dart';
+import 'package:bettsix/view_model/jili_game_launcher_view_model.dart';
 import 'package:provider/provider.dart';
 
 class PopularCategories extends StatefulWidget {
@@ -24,26 +24,26 @@ class _PopularCategoriesState extends State<PopularCategories> {
   @override
   Widget build(BuildContext context) {
 
-    final gameData=Provider.of<AllGameListViewModel>(context).allGameData;
+    final gameData=Provider.of<AllGameListViewModel>(context).getGamesChunk(50, 50);
     final jiliApi=Provider.of<JiliGameLauncherViewModel>(context);
     print(widget.data);
     return Expanded(
       child: Container(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 5.0,
             mainAxisSpacing: 5.0,
           ),
-          itemCount: gameData?.slot?.length ??0,
+          itemCount: 20,
           itemBuilder: (context, index) {
-            final data = gameData?.slot?[index];
+            final data = gameData[index];
 
             return InkWell(
               onTap: () {
                 jiliApi.setIsGameLaunched(true);
-                jiliApi.jiligame(data?.id??"", context);
+                jiliApi.jiligame(data?.gmId??"",data?.name??"", context);
                 // Handle tap event
               },
               child: Stack(
@@ -51,9 +51,9 @@ class _PopularCategoriesState extends State<PopularCategories> {
                   Container(
                       width: double.infinity,
                       height: height * 0.13,
-                      margin: EdgeInsets.symmetric(vertical: 10),
+                      margin: const EdgeInsets.symmetric(vertical: 10),
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(
+                        gradient: const LinearGradient(
                           colors: [AppColor.gray, AppColor.black],
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
@@ -63,7 +63,7 @@ class _PopularCategoriesState extends State<PopularCategories> {
                           BoxShadow(
                             color: AppColor.white.withOpacity(0.5),
                             blurRadius: 3,
-                            offset: Offset(0, 2),
+                            offset: const Offset(0, 2),
                           ),
                         ],
                       ),
@@ -71,17 +71,17 @@ class _PopularCategoriesState extends State<PopularCategories> {
                         data?.img??"",
                         fit: BoxFit.fill,
                         errorBuilder: (context, error, stackTrace) =>
-                            Icon(Icons.broken_image, size: 40, color: Colors.white), // ✅ Added error handling
+                            const Icon(Icons.broken_image, size: 40, color: Colors.white), // ✅ Added error handling
                       )// ✅ Placeholder for empty image
                   ),
                   Shimmer.fromColors(
-                    period: Duration(seconds: 6),
+                    period: const Duration(seconds: 6),
                     baseColor: Colors.transparent,
                     highlightColor: AppColor.white.withOpacity(0.3),
                     child: Container(
                       margin: EdgeInsets.only(top: height * 0.01),
                       height: height * 0.12,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.blue,
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                       ),

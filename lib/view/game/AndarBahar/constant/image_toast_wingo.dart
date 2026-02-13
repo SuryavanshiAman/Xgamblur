@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/app_colors.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/app_colors.dart';
 
 
 class ImageToastWingo {

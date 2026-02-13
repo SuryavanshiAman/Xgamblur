@@ -1,4 +1,4 @@
-package com.xgamblur.game
+package com.bettsix.game
 
 import io.flutter.embedding.android.FlutterActivity
 

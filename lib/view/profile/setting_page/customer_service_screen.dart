@@ -2,14 +2,14 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/app_colors.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/text_widget.dart';
-import 'package:xgamblur/utils/utils.dart';
-import 'package:xgamblur/view/game/wingo/res/gradient_app_bar.dart';
-import 'package:xgamblur/view_model/customer_service_view_model.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/app_colors.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/text_widget.dart';
+import 'package:bettsix/utils/utils.dart';
+import 'package:bettsix/view/game/wingo/res/gradient_app_bar.dart';
+import 'package:bettsix/view_model/customer_service_view_model.dart';
 import 'package:provider/provider.dart';
 
 class CustomerCareService extends StatefulWidget {

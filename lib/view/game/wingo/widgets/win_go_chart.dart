@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/text_widget.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/text_widget.dart';
 import 'package:provider/provider.dart';
 
 import '../controller/win_go_controller.dart';

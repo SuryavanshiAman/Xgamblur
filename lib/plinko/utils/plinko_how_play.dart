@@ -3,12 +3,12 @@
 // import 'package:flutter/foundation.dart';
 // import 'package:flutter/material.dart';
 // import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
-// import 'package:xgamblur/main.dart';
-// import 'package:xgamblur/model/plinko_result.dart';
-// import 'package:xgamblur/model/user_model.dart';
-// import 'package:xgamblur/res/aap_colors.dart';
-// import 'package:xgamblur/res/api_urls.dart';
-// import 'package:xgamblur/res/provider/user_view_provider.dart';
+// import 'package:bettsix/main.dart';
+// import 'package:bettsix/model/plinko_result.dart';
+// import 'package:bettsix/model/user_model.dart';
+// import 'package:bettsix/res/aap_colors.dart';
+// import 'package:bettsix/res/api_urls.dart';
+// import 'package:bettsix/res/provider/user_view_provider.dart';
 // import 'package:http/http.dart' as http;
 //
 //

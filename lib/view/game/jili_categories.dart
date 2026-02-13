@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/shimmer.dart';
-import 'package:xgamblur/view_model/all_game_list_view_model.dart';
-import 'package:xgamblur/view_model/jili_game_launcher_view_model.dart';
-import 'package:xgamblur/view_model/update_jili_wallet_view_model.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/shimmer.dart';
+import 'package:bettsix/view_model/all_game_list_view_model.dart';
+import 'package:bettsix/view_model/jili_game_launcher_view_model.dart';
+import 'package:bettsix/view_model/update_jili_wallet_view_model.dart';
 import 'package:provider/provider.dart';
 
 class JiliCategories extends StatefulWidget {
@@ -25,7 +25,7 @@ class _JiliCategoriesState extends State<JiliCategories> {
   @override
   Widget build(BuildContext context) {
 
-    final gameData=Provider.of<AllGameListViewModel>(context).allGameData;
+    final gameData=Provider.of<AllGameListViewModel>(context).getGamesChunk(0, 50);
     final jiliApi=Provider.of<JiliGameLauncherViewModel>(context);
 
     print(widget.data);
@@ -38,14 +38,14 @@ class _JiliCategoriesState extends State<JiliCategories> {
             crossAxisSpacing: 5.0,
             mainAxisSpacing: 5.0,
           ),
-          itemCount: gameData?.crash?.length ??0,
+          itemCount: gameData.length,
           itemBuilder: (context, index) {
-            final data = gameData?.crash?[index];
+            final data = gameData[index];
 
             return InkWell(
               onTap: () {
                 jiliApi.setIsGameLaunched(true);
-                jiliApi.jiligame(data?.id??"", context);
+                jiliApi.jiligame(data?.gmId??"",data?.name??"", context);
                 // Handle tap event
               },
               child: Stack(

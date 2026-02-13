@@ -3,7 +3,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
+import 'package:bettsix/utils/routes/routes_name.dart';
 import 'package:path_provider/path_provider.dart';
 import '../user_view_model.dart';
 

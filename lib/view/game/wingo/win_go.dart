@@ -1,21 +1,21 @@
 import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/audio.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/text_widget.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/audio.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/text_widget.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:provider/provider.dart';
-import 'package:xgamblur/view/game/wingo/res/gradient_app_bar.dart';
-import 'package:xgamblur/view/game/wingo/res/size_const.dart';
-import 'package:xgamblur/view/game/wingo/res/win_go_wallet.dart';
-import 'package:xgamblur/view/game/wingo/view_model/win_go_game_his_view_model.dart';
-import 'package:xgamblur/view/game/wingo/view_model/win_go_my_his_view_model.dart';
-import 'package:xgamblur/view/game/wingo/view_model/win_go_result_view_model.dart';
-import 'package:xgamblur/view/game/wingo/widgets/win_go_bottom_sheet.dart';
-import 'package:xgamblur/view/game/wingo/widgets/win_go_tab.dart';
+import 'package:bettsix/view/game/wingo/res/gradient_app_bar.dart';
+import 'package:bettsix/view/game/wingo/res/size_const.dart';
+import 'package:bettsix/view/game/wingo/res/win_go_wallet.dart';
+import 'package:bettsix/view/game/wingo/view_model/win_go_game_his_view_model.dart';
+import 'package:bettsix/view/game/wingo/view_model/win_go_my_his_view_model.dart';
+import 'package:bettsix/view/game/wingo/view_model/win_go_result_view_model.dart';
+import 'package:bettsix/view/game/wingo/widgets/win_go_bottom_sheet.dart';
+import 'package:bettsix/view/game/wingo/widgets/win_go_tab.dart';
 
 import 'controller/win_go_controller.dart';
 
@@ -56,8 +56,10 @@ class _WinGoState extends State<WinGo> {
   @override
   Widget build(BuildContext context) {
     return Consumer<WinGoController>(builder: (context, wgc, child) {
-      return PopScope(
-        canPop: false,
+      return WillPopScope(
+        onWillPop: () async {
+          return true; // ya tumhari logic
+        },
         child: Scaffold(
           appBar: GradientAppBar(
             elevation: 10,

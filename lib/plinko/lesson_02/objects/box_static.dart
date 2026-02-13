@@ -1,5 +1,5 @@
 import 'package:flame_forge2d/flame_forge2d.dart';
-import 'package:xgamblur/plinko/lesson_02/objects/ball_dynamic.dart';
+import 'package:bettsix/plinko/lesson_02/objects/ball_dynamic.dart';
 
 class BoxStatic extends BodyComponent with ContactCallbacks {
   double x;

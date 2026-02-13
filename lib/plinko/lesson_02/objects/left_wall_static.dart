@@ -1,5 +1,5 @@
 import 'package:flame_forge2d/flame_forge2d.dart';
-import 'package:xgamblur/Plinko/my_game.dart';
+import 'package:bettsix/Plinko/my_game.dart';
 
 class LeftWallStatic extends BodyComponent {
   @override

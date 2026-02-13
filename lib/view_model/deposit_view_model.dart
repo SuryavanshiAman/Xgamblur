@@ -1,11 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/repo/deposit_repo.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
-import 'package:xgamblur/utils/utils.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/repo/deposit_repo.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/utils/routes/routes_name.dart';
+import 'package:bettsix/utils/utils.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 
 class DepositViewModel with ChangeNotifier{
   final List<Map<String, dynamic>> paymentOptions = [

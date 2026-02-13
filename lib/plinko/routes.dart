@@ -2,7 +2,7 @@
 
 import 'dart:core';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/plinko/lesson_menu.dart';
+import 'package:bettsix/plinko/lesson_menu.dart';
 
 class Routes {
   static const menu = '/';

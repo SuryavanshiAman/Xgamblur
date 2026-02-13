@@ -3,8 +3,8 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/foundation.dart';
-import 'package:xgamblur/helper/app_exception.dart';
-import 'package:xgamblur/helper/network/base_api_services.dart';
+import 'package:bettsix/helper/app_exception.dart';
+import 'package:bettsix/helper/network/base_api_services.dart';
 import 'package:http/http.dart' as http;
 class NetworkApiServices extends BaseApiServices {
   @override

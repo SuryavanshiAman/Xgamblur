@@ -1,11 +1,11 @@
 
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/custom_text_field.dart';
-import 'package:xgamblur/view/game/Aviator/res/app_button.dart';
-import 'package:xgamblur/view/game/wingo/res/gradient_app_bar.dart';
-import 'package:xgamblur/view_model/choose_bank_view_model.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/custom_text_field.dart';
+import 'package:bettsix/view/game/Aviator/res/app_button.dart';
+import 'package:bettsix/view/game/wingo/res/gradient_app_bar.dart';
+import 'package:bettsix/view_model/choose_bank_view_model.dart';
 import 'package:get/get.dart';
 import 'package:iconly/iconly.dart';
 import 'package:provider/provider.dart';

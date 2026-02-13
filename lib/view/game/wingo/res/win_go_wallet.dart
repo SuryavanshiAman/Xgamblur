@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/constantButton.dart';
-import 'package:xgamblur/res/text_widget.dart';
-import 'package:xgamblur/utils/utils.dart';
-import 'package:xgamblur/view_model/profile_view_model.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/constantButton.dart';
+import 'package:bettsix/res/text_widget.dart';
+import 'package:bettsix/utils/utils.dart';
+import 'package:bettsix/view_model/profile_view_model.dart';
 import 'package:provider/provider.dart';
 
 class WinGoWallet extends StatefulWidget {

@@ -2,8 +2,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
 
 import 'andar_bahar_assets.dart';
 import 'andar_home_page.dart';

@@ -2,7 +2,7 @@ library particles_flutter;
 
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/res/bubble_animation/runner.dart';
+import 'package:bettsix/res/bubble_animation/runner.dart';
 import 'Particles.dart';
 import 'circular_painter.dart';
 

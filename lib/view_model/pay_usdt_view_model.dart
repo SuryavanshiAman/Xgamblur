@@ -1,12 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/model/pay_usdt_model.dart';
-import 'package:xgamblur/model/profile_model.dart';
-import 'package:xgamblur/repo/pay_usdt_repo.dart';
-import 'package:xgamblur/repo/profile_repo.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/model/pay_usdt_model.dart';
+import 'package:bettsix/model/profile_model.dart';
+import 'package:bettsix/repo/pay_usdt_repo.dart';
+import 'package:bettsix/repo/profile_repo.dart';
+import 'package:bettsix/utils/routes/routes_name.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 import 'package:iconly/iconly.dart';
 
 class PayUsdtViewModel with ChangeNotifier {

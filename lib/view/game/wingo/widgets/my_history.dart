@@ -1,10 +1,10 @@
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/constantButton.dart';
-import 'package:xgamblur/res/text_widget.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/constantButton.dart';
+import 'package:bettsix/res/text_widget.dart';
 import 'package:provider/provider.dart';
 
 import '../res/size_const.dart';

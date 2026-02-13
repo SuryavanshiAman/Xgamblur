@@ -1,11 +1,11 @@
 import 'dart:convert';
-import 'package:xgamblur/res/api_url.dart';
-import 'package:xgamblur/res/color-const.dart';
+import 'package:bettsix/res/api_url.dart';
+import 'package:bettsix/res/color-const.dart';
 import 'package:socket_io_client/socket_io_client.dart' as IO;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/utils/utils.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/utils/utils.dart';
 import 'package:provider/provider.dart';
 
 import '../res/win_go_api_url.dart';

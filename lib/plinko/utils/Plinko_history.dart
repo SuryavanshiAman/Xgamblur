@@ -2,12 +2,12 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/plinko/modal/plinko_bet_history.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/plinko/modal/plinko_bet_history.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
-import 'package:xgamblur/res/app_colors.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/res/app_colors.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 
 import '../../res/api_url.dart';
 import '../../view_model/profile_view_model.dart';

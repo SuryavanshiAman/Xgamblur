@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/view/bottom_bar/bottom_bar_two/app_size.dart';
+import 'package:bettsix/view/bottom_bar/bottom_bar_two/app_size.dart';
 
 class BottomNavBTN extends StatelessWidget {
   final Function(int) onPressed;

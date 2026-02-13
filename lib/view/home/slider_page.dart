@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/view_model/banner_view_%20model.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/view_model/banner_view_%20model.dart';
 import 'package:provider/provider.dart';
 
 class SliderPage extends StatefulWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/view/game/Aviator/res/app_button.dart';
-import 'package:xgamblur/view/game/wingo/res/gradient_app_bar.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/view/game/Aviator/res/app_button.dart';
+import 'package:bettsix/view/game/wingo/res/gradient_app_bar.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 

@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/repo/edit_password_repo.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
-import 'package:xgamblur/utils/utils.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/repo/edit_password_repo.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/utils/routes/routes_name.dart';
+import 'package:bettsix/utils/utils.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 
 class EditPasswordViewModel with ChangeNotifier {
   final _editPasswordRepo = EditPasswordRepository();

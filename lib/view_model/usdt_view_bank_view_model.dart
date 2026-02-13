@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/model/usdt_view_bank_model.dart';
-import 'package:xgamblur/model/view_bank_model.dart';
-import 'package:xgamblur/repo/usdt_view_bank_repo.dart';
-import 'package:xgamblur/repo/view_bank_repo.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/model/usdt_view_bank_model.dart';
+import 'package:bettsix/model/view_bank_model.dart';
+import 'package:bettsix/repo/usdt_view_bank_repo.dart';
+import 'package:bettsix/repo/view_bank_repo.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 
 class USdtViewBankViewModel with ChangeNotifier {
   final _usdtViewBankRepo = USdtViewBankRepo();

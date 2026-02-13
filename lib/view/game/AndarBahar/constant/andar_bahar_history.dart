@@ -1,13 +1,13 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/api_url.dart';
-import 'package:xgamblur/res/app_colors.dart';
-import 'package:xgamblur/res/color-const.dart';
-// import 'package:xgamblur/view/xgamblur/Aviator/res/api_url.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/api_url.dart';
+import 'package:bettsix/res/app_colors.dart';
+import 'package:bettsix/res/color-const.dart';
+// import 'package:bettsix/view/bettsix/Aviator/res/api_url.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 import 'package:http/http.dart' as http;
 
 import '../../Aviator/model/betting_history_model.dart';

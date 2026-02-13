@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
-import 'package:xgamblur/view_model/services/splash_services.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/utils/routes/routes_name.dart';
+import 'package:bettsix/view_model/services/splash_services.dart';
 import 'package:provider/provider.dart';
 
 

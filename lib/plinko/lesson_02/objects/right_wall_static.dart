@@ -1,6 +1,6 @@
 import 'package:flame_forge2d/flame_forge2d.dart';
 import 'package:flutter/foundation.dart';
-import 'package:xgamblur/Plinko/my_game.dart';
+import 'package:bettsix/Plinko/my_game.dart';
 
 class RightWallStatic extends BodyComponent {
   @override

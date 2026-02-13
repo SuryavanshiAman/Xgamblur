@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
+import 'package:bettsix/main.dart';
 
 
 class ToastHelper {

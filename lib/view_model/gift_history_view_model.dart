@@ -1,12 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/model/gift_history_model.dart';
-import 'package:xgamblur/model/profile_model.dart';
-import 'package:xgamblur/repo/gift_history_repo.dart';
-import 'package:xgamblur/repo/profile_repo.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/model/gift_history_model.dart';
+import 'package:bettsix/model/profile_model.dart';
+import 'package:bettsix/repo/gift_history_repo.dart';
+import 'package:bettsix/repo/profile_repo.dart';
+import 'package:bettsix/utils/routes/routes_name.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 import 'package:iconly/iconly.dart';
 
 class GiftHistoryViewModel with ChangeNotifier {

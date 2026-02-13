@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
+import 'package:bettsix/main.dart';
 
 import '../../generated/assets.dart';
 import '../../res/app_colors.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 
 import '../model/aviator_history_model.dart';
 import '../repo/aviator_history_repo.dart';

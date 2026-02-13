@@ -8,8 +8,8 @@ import 'package:get/get_navigation/src/root/internacionalization.dart';
 
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:xgamblur/res/app_constant.dart';
-import 'package:xgamblur/view/bottom_bar/bottom_bar_cubit.dart';
+import 'package:bettsix/res/app_constant.dart';
+import 'package:bettsix/view/bottom_bar/bottom_bar_cubit.dart';
 
 import 'language/english.dart';
 import 'language/hindi.dart';
@@ -156,7 +156,7 @@ class _MyAppState extends State<MyApp> {
         ChangeNotifierProvider(create: (context) => USdtViewBankViewModel()),
         ChangeNotifierProvider(create: (context) => DepositHistoryViewModel()),
         ChangeNotifierProvider(create: (context) => UpdateJiliToUserWalletViewModel()),
-        ChangeNotifierProvider(create: (context) => UpdateJiliWalletViewModel()),
+        // ChangeNotifierProvider(create: (context) => UpdateJiliWalletViewModel()),
         ChangeNotifierProvider(create: (context) => UpdateLanguageViewModel()),
         ChangeNotifierProvider(create: (context) => LiveNotificationViewModel()),
         ChangeNotifierProvider(create: (context) => BannerViewModel()),

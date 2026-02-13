@@ -2,17 +2,17 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/bubble_animation/Particles.dart';
-import 'package:xgamblur/res/bubble_animation/particle_engine.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/constantButton.dart';
-import 'package:xgamblur/res/text_widget.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
-import 'package:xgamblur/utils/utils.dart';
-import 'package:xgamblur/view_model/profile_view_model.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/bubble_animation/Particles.dart';
+import 'package:bettsix/res/bubble_animation/particle_engine.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/constantButton.dart';
+import 'package:bettsix/res/text_widget.dart';
+import 'package:bettsix/utils/routes/routes_name.dart';
+import 'package:bettsix/utils/utils.dart';
+import 'package:bettsix/view_model/profile_view_model.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 import 'package:get/get.dart';
 import 'package:iconly/iconly.dart';
 import 'package:provider/provider.dart';
@@ -96,7 +96,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                 height: height * 0.3,
                 width: width,
                 padding: EdgeInsets.only(bottom: height * 0.07),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
                         AppColor.black,
@@ -128,21 +128,21 @@ class _ProfileScreenState extends State<ProfileScreen>{
                         Text(
                           profile?.name??""
                           "",
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: AppColor.white,
                               fontSize: 18,
                               fontFamily: "SitkaSmall"),
                         ),
                         Container(
                             width: width * 0.5,
-                            padding: EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(5),
                             decoration: BoxDecoration(
                                 color: AppColor.darkGrayTwo,
                                 borderRadius: BorderRadius.circular(25)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Text(
+                                const Text(
                                   "UID",
                                   style: TextStyle(
                                       color: AppColor.white,
@@ -156,7 +156,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                                 ),
                                 Text(
                                  profile?.uId?? "",
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       color: AppColor.white,
                                       fontSize: 16,
                                       fontFamily: "SitkaSmall"),
@@ -165,7 +165,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                                   onTap: (){
                                     Utils.copyToClipboard(profile?.uId??"", context);
                                   },
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.copy,
                                     color: AppColor.white,
                                     size: 18,
@@ -188,7 +188,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
               Container(
                 margin: EdgeInsets.only(
                     top: height * 0.2, left: width * 0.03, right: width * 0.03),
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                     color: AppColor.darkGray,
                     borderRadius: BorderRadius.circular(20)),
@@ -197,7 +197,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                   children: [
                     Text(
                       "Total balance".tr,
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: AppColor.white,
                           fontSize: 18,
                           fontFamily: "SitkaSmall"),
@@ -206,7 +206,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                       children: [
                         Text(
                           "🪙${profile?.wallet??"0.00"}",
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: AppColor.white,
                               fontSize: 18,
                               fontFamily: "SitkaSmall"),
@@ -229,9 +229,9 @@ class _ProfileScreenState extends State<ProfileScreen>{
                     ),
                     Container(
                       width: width,
-                      margin: EdgeInsets.only(top: 5, bottom: 20),
+                      margin: const EdgeInsets.only(top: 5, bottom: 20),
                       height: 2,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         gradient: LinearGradient(
                           begin: Alignment.topRight,
                           end: Alignment.bottomLeft,
@@ -273,7 +273,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
           ),
           GridView.builder(
             
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -285,6 +285,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                 final data = elementList.elementList[index];
                 return Card(
                   elevation: 3,
+                 color: AppColor.darkGray,
                   margin: const EdgeInsets.only(top: 18),
                   child: InkWell(
                       onTap: () {
@@ -295,9 +296,9 @@ class _ProfileScreenState extends State<ProfileScreen>{
                       child: Stack(
                         children: [
                           Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: AppColor.darkGray,
-                                borderRadius: const BorderRadius.all(
+                                borderRadius: BorderRadius.all(
                                     Radius.circular(10)),
                               ),
                               child: Row(
@@ -320,7 +321,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                                       children: [
                                         Text(
                                           data.name.tr,
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                               color: AppColor.white,
                                               fontSize: 14,
                                               fontFamily: "SitkaSmall",
@@ -328,7 +329,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                                         ),
                                         Text(
                                           data.subTitle.tr,
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                               color: AppColor.white,
                                               fontSize: 12,
                                               fontFamily: "SitkaSmall",
@@ -340,7 +341,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                                 ],
                               )),
                           Shimmer.fromColors(
-                            period: Duration(seconds: 6),
+                            period: const Duration(seconds: 6),
                             baseColor:Colors.transparent,
                             highlightColor:AppColor.white.withOpacity(0.3),
                             child: Container(
@@ -366,14 +367,14 @@ class _ProfileScreenState extends State<ProfileScreen>{
               left: width*0.03,
               right: width*0.03
             ),
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
                 // color: AppColor.darkGray,
                 gradient: AppColor.appBarGradient,
                 borderRadius: BorderRadius.circular(20)),
             child: ListView.builder(
                 shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 itemCount: elementList.elementListTwo.length,
                 itemBuilder: (context, index) {
                   final elementListTwo = elementList.elementListTwo[index];
@@ -386,7 +387,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                           }
                         },
                         child: ListTile(
-                          shape: Border(
+                          shape: const Border(
                               bottom: BorderSide(
                                   color: Colors.white,
                                   width: 1)), // Bottom border
@@ -398,9 +399,9 @@ class _ProfileScreenState extends State<ProfileScreen>{
                           ), // Use 'images' key to get the image asset
                           title: Text(
                             elementListTwo['title'].toString().tr,
-                            style: TextStyle(color: AppColor.white),
+                            style: const TextStyle(color: AppColor.white),
                           ), // Use 'title' key to get the title text
-                          trailing: Icon(
+                          trailing: const Icon(
                             IconlyLight.arrow_right_2,
                             color: AppColor.white,
                           ),
@@ -408,9 +409,9 @@ class _ProfileScreenState extends State<ProfileScreen>{
                       ),
                       Container(
                         width: width,
-                        margin: EdgeInsets.only(top: 5, bottom: 20),
+                        margin: const EdgeInsets.only(top: 5, bottom: 20),
                         height: 2,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             begin: Alignment.topRight,
                             end: Alignment.bottomLeft,
@@ -435,7 +436,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                 left: width*0.03,
                 right: width*0.03
             ),
-            padding: EdgeInsets.only(left: 5),
+            padding: const EdgeInsets.only(left: 5),
             decoration: BoxDecoration(
                 // color: AppColor.darkGray,
                 gradient: AppColor.appBarGradient,
@@ -472,7 +473,7 @@ class _ProfileScreenState extends State<ProfileScreen>{
                           child: Text(
                             data['title'].toString().tr,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
+                            style: const TextStyle(
 
                                 color: AppColor.white,
                                 fontSize: 12,

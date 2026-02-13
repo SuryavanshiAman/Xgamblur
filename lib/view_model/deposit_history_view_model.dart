@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/model/deposit_model.dart';
-import 'package:xgamblur/repo/deposit_history_repo.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/model/deposit_model.dart';
+import 'package:bettsix/repo/deposit_history_repo.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 
 class DepositHistoryViewModel with ChangeNotifier {
   final _depositHistoryRepo = DepositHistoryRepo();

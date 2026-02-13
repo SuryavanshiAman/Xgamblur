@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:xgamblur/view/game/AndarBahar/constant/coin/set_coin.dart';
+import 'package:bettsix/view/game/AndarBahar/constant/coin/set_coin.dart';
 
 class AnimatedCoin extends StatefulWidget {
   final int type;

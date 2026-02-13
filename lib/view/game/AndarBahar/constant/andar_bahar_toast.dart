@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'dart:ui' as ui;
 
-import 'package:xgamblur/main.dart';
+import 'package:bettsix/main.dart';
 
 
 

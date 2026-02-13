@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
+import 'package:bettsix/generated/assets.dart';
 
 class GameViewModel with ChangeNotifier{
   List<Map<String, String>>gameCategories=[

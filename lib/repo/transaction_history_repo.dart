@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
-import 'package:xgamblur/helper/network/base_api_services.dart';
-import 'package:xgamblur/helper/network/network_api_services.dart';
-import 'package:xgamblur/model/transaction_history_model.dart';
-import 'package:xgamblur/res/api_url.dart';
+import 'package:bettsix/helper/network/base_api_services.dart';
+import 'package:bettsix/helper/network/network_api_services.dart';
+import 'package:bettsix/model/transaction_history_model.dart';
+import 'package:bettsix/res/api_url.dart';
 
 class TransactionHistoryRepo {
   final BaseApiServices _apiServices = NetworkApiServices();

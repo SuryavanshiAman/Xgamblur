@@ -2,8 +2,9 @@
 
 class ApiUrl{
   // static const String baseUrl = 'https://thailand.mobileappdemo.net/api/';
-  static const String baseUrl = 'https://admin.xgamblur.com/api/';
-  static const String referralUrl = 'https://admin.xgamblur.com/referral_code/';
+  // static const String baseUrl = 'https://admin.xgamblur.com/api/';
+  static const String baseUrl = 'https://admin.bettsix.com/api/';
+  static const String referralUrl = 'https://admin.bettsix.com/referral_code/';
   static const String registerApi = '${baseUrl}register';
   static const String loginApi = '${baseUrl}login';
   static const String profileApi = '${baseUrl}profile/';
@@ -57,8 +58,8 @@ class ApiUrl{
   static const String resultList = "${baseUrl}results?game_id=";
   static const String game_win = "${baseUrl}win-amount?userid=";
   /// jili
-  static const String allGameList = "${baseUrl}all_game_list";
-  static const String getGame = "${baseUrl}get_game_url";
+  static const String allGameList = "${baseUrl}games-by-category?cat_id=5";
+  static const String getGame = "${baseUrl}launchGame";
   /// aviator
   static const String aviatorHistory = '${baseUrl}aviator_history';
   static const String aviatorBet = "${baseUrl}aviator_bet";

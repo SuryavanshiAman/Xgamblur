@@ -1,12 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/model/profile_model.dart';
-import 'package:xgamblur/model/transaction_model.dart';
-import 'package:xgamblur/repo/profile_repo.dart';
-import 'package:xgamblur/repo/transaction_type_repo.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/model/profile_model.dart';
+import 'package:bettsix/model/transaction_model.dart';
+import 'package:bettsix/repo/profile_repo.dart';
+import 'package:bettsix/repo/transaction_type_repo.dart';
+import 'package:bettsix/utils/routes/routes_name.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 import 'package:iconly/iconly.dart';
 
 class TransactionTypeViewModel with ChangeNotifier {

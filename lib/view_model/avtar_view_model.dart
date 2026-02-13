@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:xgamblur/model/avtar_model.dart';
-import 'package:xgamblur/repo/avtar_image_repo.dart';
+import 'package:bettsix/model/avtar_model.dart';
+import 'package:bettsix/repo/avtar_image_repo.dart';
 
 class AvtarViewModel with ChangeNotifier {
   final _avtarRepository = AvtarImageRepository();
@@ -24,7 +24,7 @@ class AvtarViewModel with ChangeNotifier {
       }
     }).onError((error, stackTrace) {
       if (kDebugMode) {
-        print('UserProfileViewModel: $error');
+        print('avtarApi: $error');
       }
     });
   }

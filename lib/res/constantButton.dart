@@ -77,6 +77,23 @@ class _constantbuttonState extends State<constantbutton>
             Container(
               width: widget.width ?? width ,
               height: widget.height ?? height * 0.05,
+              // decoration: BoxDecoration(
+              //   gradient: const LinearGradient(
+              //     begin: Alignment.topRight,
+              //     end: Alignment.bottomLeft,
+              //     colors: [
+              //       AppColor.gray,
+              //       Colors.black,
+              //       AppColor.gray,
+              //     ],
+              //   ),
+              //   border: Border(
+              //     bottom: BorderSide(
+              //       color: _scale == 0.9 ? AppColor.black : AppColor.white,
+              //     ),
+              //   ),
+              //   borderRadius: const BorderRadius.all(Radius.circular(15)),
+              // ),
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
                   begin: Alignment.topRight,
@@ -87,13 +104,13 @@ class _constantbuttonState extends State<constantbutton>
                     AppColor.gray,
                   ],
                 ),
-                border: Border(
-                  bottom: BorderSide(
-                    color: _scale == 0.9 ? AppColor.black : AppColor.white,
-                  ),
+                border: Border.all(
+                  color: _scale == 0.9 ? AppColor.black : AppColor.white,
+                  width: 1.5,
                 ),
                 borderRadius: const BorderRadius.all(Radius.circular(15)),
               ),
+
               child: Center(
                 child: Text(
                   widget.text,

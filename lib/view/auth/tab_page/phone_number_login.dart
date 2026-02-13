@@ -2,15 +2,15 @@ import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/circular_button.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/constantButton.dart';
-import 'package:xgamblur/res/custom_text_field.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
-import 'package:xgamblur/utils/utils.dart';
-import 'package:xgamblur/view_model/auth_view_model.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/circular_button.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/constantButton.dart';
+import 'package:bettsix/res/custom_text_field.dart';
+import 'package:bettsix/utils/routes/routes_name.dart';
+import 'package:bettsix/utils/utils.dart';
+import 'package:bettsix/view_model/auth_view_model.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
@@ -66,7 +66,7 @@ class _PhoneNumberLoginState extends State<PhoneNumberLogin> {
               height: height * 0.07,
               decoration: BoxDecoration(
                   color: AppColor.gray.withOpacity(0.5),
-                  border: Border(bottom: BorderSide(color: AppColor.white)),
+                  // border: Border(bottom: BorderSide(color: AppColor.white)),
                   borderRadius: BorderRadius.circular(12)),
               child: Center(
                 child: CountryCodePicker(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/plinko/routes.dart';
+import 'package:bettsix/plinko/routes.dart';
 
 class LessonMenu extends StatelessWidget {
   const LessonMenu({super.key});

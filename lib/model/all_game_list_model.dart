@@ -1,20 +1,9 @@
 class AllGameListModel {
-  int? status;
+  bool? status;
   String? message;
   List<Data>? data;
-  List<Fish>? fish;
-  List<Slot>? slot;
-  List<Tableandcard>? tableandcard;
-  List<Crash>? crash;
 
-  AllGameListModel(
-      {this.status,
-        this.message,
-        this.data,
-        this.fish,
-        this.slot,
-        this.tableandcard,
-        this.crash});
+  AllGameListModel({this.status, this.message, this.data});
 
   AllGameListModel.fromJson(Map<String, dynamic> json) {
     status = json['status'];
@@ -22,160 +11,59 @@ class AllGameListModel {
     if (json['data'] != null) {
       data = <Data>[];
       json['data'].forEach((v) {
-        data!.add(Data.fromJson(v));
-      });
-    }
-    if (json['fish'] != null) {
-      fish = <Fish>[];
-      json['fish'].forEach((v) {
-        fish!.add(Fish.fromJson(v));
-      });
-    }
-    if (json['slot'] != null) {
-      slot = <Slot>[];
-      json['slot'].forEach((v) {
-        slot!.add(Slot.fromJson(v));
-      });
-    }
-    if (json['tableandcard'] != null) {
-      tableandcard = <Tableandcard>[];
-      json['tableandcard'].forEach((v) {
-        tableandcard!.add(Tableandcard.fromJson(v));
-      });
-    }
-    if (json['crash'] != null) {
-      crash = <Crash>[];
-      json['crash'].forEach((v) {
-        crash!.add(Crash.fromJson(v));
+        data!.add(new Data.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['status'] = status;
-    data['message'] = message;
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['status'] = this.status;
+    data['message'] = this.message;
     if (this.data != null) {
       data['data'] = this.data!.map((v) => v.toJson()).toList();
-    }
-    if (fish != null) {
-      data['fish'] = fish!.map((v) => v.toJson()).toList();
-    }
-    if (slot != null) {
-      data['slot'] = slot!.map((v) => v.toJson()).toList();
-    }
-    if (tableandcard != null) {
-      data['tableandcard'] = tableandcard!.map((v) => v.toJson()).toList();
-    }
-    if (crash != null) {
-      data['crash'] = crash!.map((v) => v.toJson()).toList();
     }
     return data;
   }
 }
 
 class Data {
-  String? img;
-  String? name;
-  int? id;
+  dynamic id;
+  dynamic name;
+  dynamic catId;
+  dynamic gmId;
+  dynamic img;
+  dynamic status;
+  dynamic datetime;
 
-  Data({this.img, this.name, this.id});
+  Data(
+      {this.id,
+        this.name,
+        this.catId,
+        this.gmId,
+        this.img,
+        this.status,
+        this.datetime});
 
   Data.fromJson(Map<String, dynamic> json) {
-    img = json['img'];
-    name = json['name'];
     id = json['id'];
+    name = json['name'];
+    catId = json['cat_id'];
+    gmId = json['gmId'];
+    img = json['img'];
+    status = json['status'];
+    datetime = json['datetime'];
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['img'] = img;
-    data['name'] = name;
-    data['id'] = id;
-    return data;
-  }
-}
-class Fish {
-  String? img;
-  String? name;
-  int? id;
-
-  Fish({this.img, this.name, this.id});
-
-  Fish.fromJson(Map<String, dynamic> json) {
-    img = json['img'];
-    name = json['name'];
-    id = json['id'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['img'] = img;
-    data['name'] = name;
-    data['id'] = id;
-    return data;
-  }
-}
-class Slot {
-  String? img;
-  String? name;
-  int? id;
-
-  Slot({this.img, this.name, this.id});
-
-  Slot.fromJson(Map<String, dynamic> json) {
-    img = json['img'];
-    name = json['name'];
-    id = json['id'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['img'] = img;
-    data['name'] = name;
-    data['id'] = id;
-    return data;
-  }
-}
-class Tableandcard {
-  String? img;
-  String? name;
-  int? id;
-
-  Tableandcard({this.img, this.name, this.id});
-
-  Tableandcard.fromJson(Map<String, dynamic> json) {
-    img = json['img'];
-    name = json['name'];
-    id = json['id'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['img'] = img;
-    data['name'] = name;
-    data['id'] = id;
-    return data;
-  }
-}
-class Crash {
-  String? img;
-  String? name;
-  int? id;
-
-  Crash({this.img, this.name, this.id});
-
-  Crash.fromJson(Map<String, dynamic> json) {
-    img = json['img'];
-    name = json['name'];
-    id = json['id'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['img'] = img;
-    data['name'] = name;
-    data['id'] = id;
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['id'] = this.id;
+    data['name'] = this.name;
+    data['cat_id'] = this.catId;
+    data['gmId'] = this.gmId;
+    data['img'] = this.img;
+    data['status'] = this.status;
+    data['datetime'] = this.datetime;
     return data;
   }
 }

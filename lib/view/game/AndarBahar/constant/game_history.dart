@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/api_url.dart';
-import 'package:xgamblur/res/app_colors.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/api_url.dart';
+import 'package:bettsix/res/app_colors.dart';
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart'as http;
-import 'package:xgamblur/view/game/AndarBahar/andarBaharModel/bet_history_con.dart';
+import 'package:bettsix/view/game/AndarBahar/andarBaharModel/bet_history_con.dart';
 
 
 

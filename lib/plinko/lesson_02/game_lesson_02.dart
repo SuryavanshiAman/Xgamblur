@@ -1,10 +1,10 @@
 import 'package:flame/components.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/Plinko/lesson_02/objects/balance_hud.dart';
-import 'package:xgamblur/Plinko/lesson_02/objects/separator_static.dart';
-import 'package:xgamblur/Plinko/my_game.dart';
-import 'package:xgamblur/plinko/lesson_02/objects/box_static.dart';
-import 'package:xgamblur/plinko/lesson_02/objects/floor_static.dart';
+import 'package:bettsix/Plinko/lesson_02/objects/balance_hud.dart';
+import 'package:bettsix/Plinko/lesson_02/objects/separator_static.dart';
+import 'package:bettsix/Plinko/my_game.dart';
+import 'package:bettsix/plinko/lesson_02/objects/box_static.dart';
+import 'package:bettsix/plinko/lesson_02/objects/floor_static.dart';
 
 
 class PlinkoMains extends MyGame {

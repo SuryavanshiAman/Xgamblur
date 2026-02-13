@@ -1,11 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/repo/update_jili_wallet_repo.dart';
-import 'package:xgamblur/repo/update_jilli_to_user_wallet_repo.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
-import 'package:xgamblur/utils/utils.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/repo/update_jili_wallet_repo.dart';
+import 'package:bettsix/repo/update_jilli_to_user_wallet_repo.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/utils/routes/routes_name.dart';
+import 'package:bettsix/utils/utils.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 
 class UpdateJiliToUserWalletViewModel with ChangeNotifier {
   final _updateJiliToUserWalletRepo = UpdateJilliToUserWalletRepo();

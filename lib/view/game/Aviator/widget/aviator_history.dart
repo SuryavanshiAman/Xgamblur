@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
-import 'package:xgamblur/view/game/Aviator/view_model/aviator_history_view_model.dart';
+import 'package:bettsix/view/game/Aviator/view_model/aviator_history_view_model.dart';
 
 class AviatorHistory extends StatefulWidget {
   const AviatorHistory({super.key});

@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
+import 'package:bettsix/generated/assets.dart';
 
 class CoinSpringAnimation extends StatefulWidget {
   const CoinSpringAnimation({super.key});

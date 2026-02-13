@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:xgamblur/view/bottom_bar/bottom_bar_two/app_size.dart';
-import 'package:xgamblur/view/home/home_screen.dart';
-import 'package:xgamblur/view/profile/profile_screen.dart';
-import 'package:xgamblur/view/wallet/wallet_screen.dart';
+import 'package:bettsix/view/bottom_bar/bottom_bar_two/app_size.dart';
+import 'package:bettsix/view/home/home_screen.dart';
+import 'package:bettsix/view/profile/profile_screen.dart';
+import 'package:bettsix/view/wallet/wallet_screen.dart';
 
 import 'sample_widget.dart';
 List<Widget> screens = [

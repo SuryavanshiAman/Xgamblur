@@ -3,19 +3,19 @@ import 'dart:io';
 import 'package:flame_forge2d/flame_forge2d.dart';
 import 'package:flutter/foundation.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:xgamblur/Plinko/my_game.dart';
+import 'package:bettsix/Plinko/my_game.dart';
 
-import 'package:xgamblur/plinko/lesson_02/objects/ball_dynamic.dart';
+import 'package:bettsix/plinko/lesson_02/objects/ball_dynamic.dart';
 import 'package:http/http.dart' as http;
-import 'package:xgamblur/plinko/modal/plinko_bet_history.dart';
-import 'package:xgamblur/plinko/utils/plinko_loss_popup.dart';
-import 'package:xgamblur/plinko/utils/plinko_win_popup.dart';
+import 'package:bettsix/plinko/modal/plinko_bet_history.dart';
+import 'package:bettsix/plinko/utils/plinko_loss_popup.dart';
+import 'package:bettsix/plinko/utils/plinko_win_popup.dart';
 import 'package:flutter/material.dart';
 import 'package:flame/extensions.dart';
-import 'package:xgamblur/res/api_url.dart';
+import 'package:bettsix/res/api_url.dart';
 import 'dart:ui' as ui;
 
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 
 
 

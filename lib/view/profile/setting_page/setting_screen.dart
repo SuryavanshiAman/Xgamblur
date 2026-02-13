@@ -1,17 +1,17 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/bubble_animation/Particles.dart';
-import 'package:xgamblur/res/bubble_animation/particle_engine.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/text_widget.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
-import 'package:xgamblur/view/game/Aviator/res/app_button.dart';
-import 'package:xgamblur/view/game/wingo/res/gradient_app_bar.dart';
-import 'package:xgamblur/view/profile/setting_page/nickname_screen.dart';
-import 'package:xgamblur/view_model/profile_view_model.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/bubble_animation/Particles.dart';
+import 'package:bettsix/res/bubble_animation/particle_engine.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/text_widget.dart';
+import 'package:bettsix/utils/routes/routes_name.dart';
+import 'package:bettsix/view/game/Aviator/res/app_button.dart';
+import 'package:bettsix/view/game/wingo/res/gradient_app_bar.dart';
+import 'package:bettsix/view/profile/setting_page/nickname_screen.dart';
+import 'package:bettsix/view_model/profile_view_model.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 

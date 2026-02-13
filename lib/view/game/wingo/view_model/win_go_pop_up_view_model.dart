@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:xgamblur/view/game/wingo/repo/win_go_pop_up_repo.dart';
-import 'package:xgamblur/view/game/wingo/widgets/win_pop_up.dart';
-import 'package:xgamblur/view_model/profile_view_model.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
+import 'package:bettsix/view/game/wingo/repo/win_go_pop_up_repo.dart';
+import 'package:bettsix/view/game/wingo/widgets/win_pop_up.dart';
+import 'package:bettsix/view_model/profile_view_model.dart';
+import 'package:bettsix/view_model/user_view_model.dart';
 import 'package:provider/provider.dart';
 
 import '../model/win_amount_model.dart';

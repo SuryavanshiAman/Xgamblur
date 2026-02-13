@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/main.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/main.dart';
 
 class ToastLostHelper {
   static void showloss({

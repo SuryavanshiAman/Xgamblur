@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:xgamblur/res/app_colors.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/view/bottom_bar/bottom_bar_two/app_size.dart';
-import 'package:xgamblur/view/bottom_bar/bottom_bar_two/clipper.dart';
+import 'package:bettsix/res/app_colors.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/view/bottom_bar/bottom_bar_two/app_size.dart';
+import 'package:bettsix/view/bottom_bar/bottom_bar_two/clipper.dart';
 import 'package:iconly/iconly.dart';
 
 import 'bottom_nav_btn.dart';

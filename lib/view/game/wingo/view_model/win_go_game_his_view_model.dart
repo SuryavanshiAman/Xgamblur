@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/utils/utils.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/utils/utils.dart';
 import 'package:provider/provider.dart';
 
 import '../controller/win_go_controller.dart';

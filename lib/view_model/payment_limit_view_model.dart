@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:xgamblur/model/palyment_limit_model.dart';
-import 'package:xgamblur/repo/payment_limit_repo.dart';
+import 'package:bettsix/model/palyment_limit_model.dart';
+import 'package:bettsix/repo/payment_limit_repo.dart';
 
 class PaymentLimitViewModel with ChangeNotifier {
   final _paymentLimitRepo = PaymentLimitRepo();

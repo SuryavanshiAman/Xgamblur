@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
-import 'package:xgamblur/helper/network/base_api_services.dart';
-import 'package:xgamblur/helper/network/network_api_services.dart';
-import 'package:xgamblur/model/choose_model.dart';
-import 'package:xgamblur/model/profile_model.dart';
-import 'package:xgamblur/res/api_url.dart';
+import 'package:bettsix/helper/network/base_api_services.dart';
+import 'package:bettsix/helper/network/network_api_services.dart';
+import 'package:bettsix/model/choose_model.dart';
+import 'package:bettsix/model/profile_model.dart';
+import 'package:bettsix/res/api_url.dart';
 
 class ChooseBankRepo {
   final BaseApiServices _apiServices = NetworkApiServices();

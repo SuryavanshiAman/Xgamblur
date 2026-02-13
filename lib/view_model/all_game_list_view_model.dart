@@ -1,13 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/model/all_game_list_model.dart';
-import 'package:xgamblur/model/profile_model.dart';
-import 'package:xgamblur/repo/all_game_list_repo.dart';
-import 'package:xgamblur/repo/profile_repo.dart';
-import 'package:xgamblur/utils/routes/routes_name.dart';
-import 'package:xgamblur/view_model/user_view_model.dart';
-import 'package:iconly/iconly.dart';
+import 'package:bettsix/model/all_game_list_model.dart';
+import 'package:bettsix/repo/all_game_list_repo.dart';
 
 class AllGameListViewModel with ChangeNotifier {
   final _allGameList = AllGameListRepo();
@@ -19,10 +12,20 @@ class AllGameListViewModel with ChangeNotifier {
     _allGameData = value;
     notifyListeners();
   }
+  List getGamesChunk(int start, int limit) {
+    final list = _allGameData?.data ?? [];
+
+    if (start >= list.length) return [];
+
+    int end = start + limit;
+    if (end > list.length) end = list.length;
+
+    return list.sublist(start, end);
+  }
 
   Future<void> allGameListApi(context) async {
     _allGameList.allGameListApi().then((value) {
-      if (value.status == 200) {
+      if (value.status == true) {
         setAllGame(value);
       } else {
         if (kDebugMode) {
@@ -31,7 +34,7 @@ class AllGameListViewModel with ChangeNotifier {
       }
     }).onError((error, stackTrace) {
       if (kDebugMode) {
-        print('UserProfileViewModel: $error');
+        print('allGameListApi: $error');
       }
     });
   }

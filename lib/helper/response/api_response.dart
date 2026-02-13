@@ -1,6 +1,6 @@
 
 
-import 'package:xgamblur/helper/response/status.dart';
+import 'package:bettsix/helper/response/status.dart';
 
 class ApiResponse<T> {
   Status? status;

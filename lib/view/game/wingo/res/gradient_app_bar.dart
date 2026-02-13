@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:xgamblur/main.dart';
-import 'package:xgamblur/res/color-const.dart';
+import 'package:bettsix/main.dart';
+import 'package:bettsix/res/color-const.dart';
 
 class GradientAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget? leading;

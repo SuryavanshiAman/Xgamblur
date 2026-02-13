@@ -1,11 +1,11 @@
 
 import 'package:flutter/material.dart';
-import 'package:xgamblur/generated/assets.dart';
-import 'package:xgamblur/res/color-const.dart';
-import 'package:xgamblur/res/text_widget.dart';
-import 'package:xgamblur/view/game/wingo/res/gradient_app_bar.dart';
-import 'package:xgamblur/view_model/avtar_view_model.dart';
-import 'package:xgamblur/view_model/update_profile_view_model.dart';
+import 'package:bettsix/generated/assets.dart';
+import 'package:bettsix/res/color-const.dart';
+import 'package:bettsix/res/text_widget.dart';
+import 'package:bettsix/view/game/wingo/res/gradient_app_bar.dart';
+import 'package:bettsix/view_model/avtar_view_model.dart';
+import 'package:bettsix/view_model/update_profile_view_model.dart';
 import 'package:provider/provider.dart';
 import 'package:http/http.dart'as http;
 
