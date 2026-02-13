@@ -33,8 +33,8 @@ class ApiUrl{
   static const String customerServiceApi = '${baseUrl}customer_service';
   static const String viewUserUsdtAddressApi = '${baseUrl}viewUserUsdtAddress/';
   static const String depositHistoriesApi = '${baseUrl}depositHistories/';
-  static const String updateJilliWalletApi = '${baseUrl}update_jilli_wallet';
-  static const String updateJilliToUserWalletApi = '${baseUrl}update_jilli_to_user_wallet';
+  // static const String updateJilliWalletApi = '${baseUrl}update_jilli_wallet';
+  // static const String updateJilliToUserWalletApi = '${baseUrl}update_jilli_to_user_wallet';
   static const String liveNotificationApi = '${baseUrl}live_notification';
   static const String bannerApi = '${baseUrl}banner';
 

@@ -155,7 +155,7 @@ class _MyAppState extends State<MyApp> {
         ChangeNotifierProvider(create: (context) => UsdtBankViewModel()),
         ChangeNotifierProvider(create: (context) => USdtViewBankViewModel()),
         ChangeNotifierProvider(create: (context) => DepositHistoryViewModel()),
-        ChangeNotifierProvider(create: (context) => UpdateJiliToUserWalletViewModel()),
+        // ChangeNotifierProvider(create: (context) => UpdateJiliToUserWalletViewModel()),
         // ChangeNotifierProvider(create: (context) => UpdateJiliWalletViewModel()),
         ChangeNotifierProvider(create: (context) => UpdateLanguageViewModel()),
         ChangeNotifierProvider(create: (context) => LiveNotificationViewModel()),

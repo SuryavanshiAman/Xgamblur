@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver  {
     final jiliApi=Provider.of<JiliGameLauncherViewModel>(context,listen: false);
 
     if (state == AppLifecycleState.resumed&&jiliApi.isGameLaunched==true) {
-Provider.of<UpdateJiliToUserWalletViewModel>(context,listen: false).updateJilliToUserWalletApi(context);
+// Provider.of<UpdateJiliToUserWalletViewModel>(context,listen: false).updateJilliToUserWalletApi(context);
 jiliApi.setIsGameLaunched(false);
     }
   }
