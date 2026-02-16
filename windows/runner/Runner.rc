@@ -95,7 +95,7 @@ BEGIN
             VALUE "InternalName", "wins_pkr" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.treamz.plinko. All rights reserved." "\0"
             VALUE "OriginalFilename", "wins_pkr.exe" "\0"
-            VALUE "ProductName", "Xgamblur" "\0"
+            VALUE "ProductName", "BettSix" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

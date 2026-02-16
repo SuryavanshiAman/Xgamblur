@@ -136,7 +136,7 @@ class LocaleStringEn extends Translations {
       'Share the code':"Share the code",
       'Confirm new password':"Confirm new password",
       "Invite your friend to use our app and you'll get 5% of the first deposit first time .This will be added to your bonus balance so,you use it to purchase any product.":"Invite your friend to use our app and you'll get 5% of the first deposit first time .This will be added to your bonus balance so,you use it to purchase any product.",
-      'Xgamblur':"Xgamblur",
+      'BettSix':"BettSix",
       'Win Go':"Win Go",
       'Guess Number\nGreen/Red/Violet to win':"Guess Number\nGreen/Red/Violet to win",
       'AndarBahar':"AndarBahar",

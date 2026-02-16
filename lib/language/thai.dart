@@ -131,7 +131,7 @@ class LocaleStringTh extends Translations {
   'Confirm new password':"ยืนยันรหัสผ่านใหม่",
   "Invite your friend to use our app and you'll get 5% of the first deposit first time .This will be added to your bonus balance so,you use it to purchase any product.":
   "เชิญเพื่อนของคุณมาใช้แอปของเรา แล้วคุณจะได้รับ 5% ของการฝากเงินครั้งแรก โบนัสนี้จะถูกเพิ่มไปยังยอดโบนัสของคุณ เพื่อให้คุณสามารถใช้ซื้อสินค้าต่างๆ ได้",
-      'Xgamblur': "Xgamblur",
+      'BettSix': "BettSix",
       'Win Go': "วินโก",
       'Guess Number\nGreen/Red/Violet to win': "เดาหมายเลข\nเขียว/แดง/ม่วง เพื่อชนะ",
       'AndarBahar': "อันดาร์บาฮาร์",

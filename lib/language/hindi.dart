@@ -137,7 +137,7 @@ class LocaleStringHi extends Translations {
   'Confirm new password':"नया पासवर्ड पुष्टि करें",
   "Invite your friend to use our app and you'll get 5% of the first deposit first time .This will be added to your bonus balance so,you use it to purchase any product.":
   "अपने दोस्त को हमारे ऐप का उपयोग करने के लिए आमंत्रित करें और आपको पहली जमा राशि का 5% मिलेगा। यह आपकी बोनस शेष राशि में जोड़ा जाएगा ताकि आप इसे किसी भी उत्पाद की खरीद के लिए उपयोग कर सकें।",
-          'Xgamblur': "Xgamblur",
+          'BettSix': "BettSix",
           'Win Go': "विन गो",
           'Guess Number\nGreen/Red/Violet to win': "संख्या अनुमान लगाएं\nजीतने के लिए हरा/लाल/बैंगनी चुनें",
           'AndarBahar': "अंदर बाहर",

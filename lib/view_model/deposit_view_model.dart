@@ -126,9 +126,9 @@ class DepositViewModel with ChangeNotifier{
       "type" : "1"
     };
     _depositRepo.depositApi(data).then((value) {
-      if (value['status'] == "SUCCESS") {
+      if (value['status'] == true) {
         setLoading(false);
-        final url =value['payment_link'].toString();
+        final url =value['response']['order_details']['deeplink'].toString();
         print("DepositURl:$url");
         Utils.launchURL(url);
         // Navigator.pushReplacementNamed(context, RoutesName.bottomNavBar);
@@ -136,12 +136,12 @@ class DepositViewModel with ChangeNotifier{
       }
       else {
         setLoading(false);
-        Utils.setSnackBar(value['message'], AppColor.red, context);
+        Utils.setSnackBar(value['msg'], AppColor.red, context);
       }
     }).onError((error, stackTrace) {
       setLoading(false);
       if (kDebugMode) {
-        print('withdrawApi: $error');
+        print('depositApi: $error');
       }
     });
   }

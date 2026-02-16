@@ -49,7 +49,7 @@ class AndarBaharLoadingState extends State<AndarBaharLoading> {
           Image.asset(AndarAssets.andarbaharLoading,height: height*0.40,),
             SizedBox(height: height*0.02,),
             Text(
-              "Andhar Bahar is a verifiable 100% Xgamblur",
+              "Andhar Bahar is a verifiable 100% BettSix",
               style: TextStyle(
                   fontSize: width*0.02,
                   color: Colors.white
